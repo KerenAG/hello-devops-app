@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5173
 
 # Comando para ejecutar la app
-CMD ["npm", "run", "dev", "--", "--host"]
+CMD ["npm", "run", "dev", "--", "3000"]
