@@ -12,7 +12,7 @@ export default function App() {
       
       <div style={styles.card}>
         
-        <h1 style={styles.title}>DevOps Pipeline</h1>
+        <h1 style={styles.title}>DevOps CI/CD Pipeline</h1>
         
         <p style={styles.subtitle}>
           Desarrollo y despliegue de aplicación web con contenedores
