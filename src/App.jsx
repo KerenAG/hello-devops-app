@@ -33,7 +33,7 @@ export default function App() {
         </div>
 
         <div style={styles.footer}>
-          Entorno preparado para flujo CI/CD con Docker
+          Entorno preparado para flujo CI/CD con Docker - Keren
         </div>
 
       </div>
