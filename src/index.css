@@ -1,0 +1,119 @@
+:root {
+  /* 🎨 PALETA PRINCIPAL */
+  --text: #4b4453;
+  --text-h: #1f1f1f;
+  --bg: #fff7fb;
+  --card-bg: #ffffff;
+
+  --border: #f3c6d8;
+
+  /* 💗 ACCENT ROSA SUAVE */
+  --accent: #f472b6;
+  --accent-bg: rgba(244, 114, 182, 0.12);
+  --accent-border: rgba(244, 114, 182, 0.35);
+
+  /* 🌸 TIPOGRAFÍA */
+  --sans: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: var(--text);
+  background-color: var(--bg);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🌙 DARK MODE SUAVE (opcional pero elegante) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #d1d5db;
+    --text-h: #ffffff;
+    --bg: #0f0b14;
+    --card-bg: #1a1423;
+
+    --border: #2a2233;
+
+    --accent: #f9a8d4;
+    --accent-bg: rgba(249, 168, 212, 0.12);
+    --accent-border: rgba(249, 168, 212, 0.3);
+  }
+}
+
+/* RESET */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ROOT CORREGIDO (IMPORTANTE PARA 100% PANTALLA) */
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TIPOGRAFÍA */
+h1, h2 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* TARJETAS BASE */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 32px;
+  width: 650px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* TARJETAS HORIZONTALES */
+.step-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  margin-top: 10px;
+}
+
+/* NUMERITO */
+.step-number {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+/* TEXTO */
+.step-text {
+  font-size: 16px;
+  color: var(--text);
+}
